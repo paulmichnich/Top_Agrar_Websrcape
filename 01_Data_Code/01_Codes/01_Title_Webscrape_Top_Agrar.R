@@ -68,10 +68,10 @@ article_data$Article_Title <- trimws(gsub("\\n", "", article_data$Article_Title)
 print(article_data)
 
 ## Optionally, save the data to a CSV file
-write.csv(article_data, paste0(save.path, "/01_Data_Code/02_Data/heftausgabe_article_titles_2000_2024.csv"), row.names = FALSE)
+write.csv(article_data, paste0(save.path, "/01_Data_Code/02_Data/heftausgabe_article_titles_2000_2025.csv"), row.names = FALSE)
 
 ## Save the error log to a separate CSV file for reference
-write.csv(error_log, paste0(save.path, "/01_Data_Code/02_Data/heftausgabe_error_log_2000_2024.csv"), row.names = FALSE)
+write.csv(error_log, paste0(save.path, "/01_Data_Code/02_Data/heftausgabe_error_log_2000_2025.csv"), row.names = FALSE)
 
 cat("Scraping complete! The article titles have been saved in 'heftausgabe_article_titles_2000_2025.csv'.\n")
 cat("Errors encountered have been logged in 'heftausgabe_error_log_2000_2025.csv'.\n")
